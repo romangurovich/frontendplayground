@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happyb</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<section class="topbar">
+  <ul class="nav">
+    <li class="topitem"><a href="#">Wellwishers</a>
+      <ul class="dropper">
+        <li><a href="#">Aaron</a></li>
+        <li><a href="#">Sofya</a></li>
+        <li><a href="#">Val</a></li>
+        <li><a href="#">Yakov</a></li>
+        <li><a href="#">Ariella</a></li>
+      </ul>
+    </li>
+    <li class="topitem"><a href="#">Moochies</a>
+      <ul class="dropper">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Something Special!</a></li>
+        <li><a href="#">Something Mundane...</a></li>
+      </ul>
+    </li>
+    <li class="topitem"><a href="#">Snoochies</a>
+      <ul class="dropper">
+        <li><a href="#">Silent Bob</a></li>
+        <li><a href="#">Jay</a></li>
+        <li><a href="#">Kevin Smith</a></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+// Place all the styles related to the greetings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+ul.nav {
+  margin: 0;
+  padding: 0;
+}
+
+li.topitem {
+  background: rgba(0, 0, 255, .5);
+  padding: 5px 20px 5px 5px;
+  list-style: none;
+  display: inline;
+  position: relative;
+  a {
+    text-decoration: none;
+  }
+}
+
+ul.dropper {
+  display: none;
+  position: absolute;
+  padding: 5px 20px 5px 5px;
+  z-index: 100;
+
+  li {
+    list-style: none;
+    background: gray;
+    color: black;
+    padding: 2px 20px 2px 5px;
+
+    &:nth-child(even) {
+      background: white;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
